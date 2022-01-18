@@ -12,10 +12,29 @@
         <div class="slide">
             <img src="src/river.jpg" alt="Ein Fluss" class="slide-bild">
             <div class="slider-content-wrapper">
-              <p class="slider-heading">Ein Tier</p>
-              <p class="slider-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, officia?</p>
+              <p class="slider-heading">Ein Fluss</p>
             </div>
         </div>
+        <div class="slide">
+            <img src="src/ampel.jpg" alt="Ein Fluss" class="slide-bild">
+            <div class="slider-content-wrapper">
+              <p class="slider-heading">Eine Ampel</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="src/libelle.jpg" alt="Ein Fluss" class="slide-bild">
+            <div class="slider-content-wrapper">
+              <p class="slider-heading">Ein Tier</p>
+            </div>
+        </div>
+        <a class="arrow arrow-left" onclick="umschalter(-1)"><span>&#8656;</span></a>
+        <a class="arrow arrow-right" onclick="umschalter(1)"><span>&#8658;</span></a>
+        <ol class="indilatorenliste">
+            <li class="indikator" onclick="springZuEintrag(0)">&#8226;</li>
+            <li class="indikator" onclick="springZuEintrag(1)">&#8226;</li>
+            <li class="indikator" onclick="springZuEintrag(2)">&#8226;</li>
+        </ol>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

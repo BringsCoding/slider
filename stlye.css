@@ -13,14 +13,19 @@ body {
 
 .slideshow { 
     width: 50vw;
-    height: 50vh;
+    height: 360px;
     box-shadow: 0px 0px 10px gray;
     position: relative;
+    max-width: 2500px;
 } 
 
+/* Settings Slider */
+/* #region SliderSettings */
 .slide { 
     position: absolute;
     inset: 0 0 0 0; 
+    opacity: 0;
+    transition: opacity 2s;
 } 
 
 .slide-bild { 
@@ -33,4 +38,75 @@ body {
     position: absolute;
     inset: 70% 0 0 0;
     background-color: rgba(222, 184, 135, 0.544);
+    color: rgb(252, 252, 252);
+    font-family: sans-serif;
+    padding-left:1rem;
+    padding-right: 1rem;
+} 
+
+.slider-heading { 
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}  
+
+/* #endregion */
+
+/* Settings Arrow */
+/* #region ArrowRegion */
+.arrow { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: honeydew;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    user-select: none;
+    cursor: pointer;
+} 
+
+.arrow-left { 
+    left:0;
+} 
+
+.arrow-right { 
+    right:0;
 }
+
+/* #endregion */
+
+
+/* Settings liste */
+/* #region Listregion */
+.indilatorenliste { 
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    list-style: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: indianred;
+} 
+
+.indikator { 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 2s;
+} 
+/* #endregion */
+
+/* Activeclasse fur Javascript  */
+.aktiv { 
+    opacity: 1;
+    color: rgb(0, 51, 255);
+} 
